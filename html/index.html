@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>learn</title>
+</head>
+
+<body>
+    <div id="div1">你好</div>
+</body>
+
+<!---->
+<script>
+
+    window.onload = function () {
+
+        var div1 = document.getElementById("div1").innerHTML;
+        //alert(div1);
+        //test1(div1);
+        //test2(div1);
+        method.test3();
+    };
+
+    function test1(_arg1){
+        return _arg1 && alert(_arg1);
+        
+    };
+
+    var test2 = function(_arg1){
+        _arg1 && alert('test2');
+    };
+
+    // 三元表达式
+    var method = {
+        test3:function(){
+            var a = 1,b=2;
+            a < b ? test2(1):test1(2);
+        }
+    }
+
+</script>
+
+</html>
